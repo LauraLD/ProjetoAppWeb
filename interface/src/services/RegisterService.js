@@ -2,17 +2,17 @@ import swal from 'sweetalert';
 import Api from './Api';
 
 export default {
-  //(POST): localhost:3000/api/v1/login
-  async loginUser(user) {
+  // (POST): localhost:3000/api/v1/register
+  async registerNewUser(newUser) {
     try {
-      const response = await Api().post('/login', user);
+      const response = await Api().post('/register', newUser);
       const { token } = response.data;
-      localStorage.setItem('jwt', token);
 
       if (token) {
+        localStorage.setItem('jwt', token);
         swal({
-          title: 'Sucesso!',
-          text: 'Usuário(a) logado com sucesso!',
+          title: 'Excelente!',
+          text: 'Usuário(a) cadastrado com sucesso!',
           icon: 'success',
         });
       }
@@ -22,7 +22,6 @@ export default {
         text: 'Alguma coisa deu errado aqui!',
         icon: 'error',
       });
-      this.$router.push('/');
     }
   },
 };
