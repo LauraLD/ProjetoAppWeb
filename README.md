@@ -28,4 +28,5 @@ $ npm run dev
 ## Criando e subindo a API 
 
 A aplicação estará em execução em http://localhost:8080/
+
 A conexão ao banco deve ser configurada de acordo com a instância do MongoDB
