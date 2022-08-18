@@ -18,8 +18,8 @@ export default {
       }
     } catch (error) {
       swal({
-        title: 'Oops!',
-        text: 'Alguma coisa deu errado aqui!',
+        title: 'Erro!',
+        text: 'Existe um erro!',
         icon: 'error',
       });
       this.$router.push('/');
