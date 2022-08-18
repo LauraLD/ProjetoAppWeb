@@ -12,16 +12,17 @@ O acesso ao banco está preparado para o mongoDB
 
 ## Instalação
 ```
-# Install project dependecies
+# Install server dependecies
 $ npm install
 
-# Install front-end dependecies
+# Install interface dependecies
 $ npm i -g @vue/cli
+$ npm i @vue/cli-service
 
-# Run front-end
+# Run interface
 $ npm run serve
 
-# Run back-end api
+# Run server
 $ npm run dev
 
 ```
