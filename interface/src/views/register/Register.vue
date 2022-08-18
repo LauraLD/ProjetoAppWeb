@@ -6,7 +6,7 @@
 
 <script>
 
-import Register from '@/components/auth-components/register/RegisterComponent.vue';
+import Register from '@/components/register/RegisterComponent.vue';
 
 export default {
   components: {
